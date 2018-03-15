@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: TD2x9ZiqW6wEUz37PbxN7FxhNAeajrQJb0/bFA8lTAo0c4s1e0hbXOJneJdKmc+MRVRHZLKTA7LiTmnT7fmE/veLQDthtnl294pYnhoEiS7qTxonmMWz8M9/fD30KnEtNBo8uyyJh7QVgGavKiVhGLDnRv7ts+PjffQU3gsLzxWS90zx8hyaKkxIQlxJ5G2cE5nSpZY6UEnoV9dKKvgeAhI4XEDiCg7cHyUrGxzL1QCCOdIVzPYawnngkmJ886XoZ6RgcxCwp5R5GXkwCn53SgvRDC3PpqU1p9q+vn9hiOszbLfqShtnGGZ2as25iE4t3a+9FJusM1z4XKT9MKQpZ1xygztSbMwev9ws/Qs/mj4RRapLR7cq6EpgFSxS3VVjAncdAcocp8zDKISAl8Ft/WomVmNgye9r5L3lRDhuRl2Np1lpxkd5i3xxhnzExiVxYjhXv+dwVO8CeRnbtNHH35xVoMeZ1o5gf4zggcYJ5lw1a36ly53nRbfcUMk9ag6s7czxPFYFKJjp24f5Xu8PJxGRf/ej28rqKkA9vB0tlEQn+ju0Z7tFf/r15QCFim/l3FvzOuVkRG9o6S6hylUL4tz2W28a4MGvIBqvncS5370TynOIYe+i3Fc2AR+1QbwS3z+R7TepF3ujVmPdljzCsXyOjDH3kLiHfhAheTRAL88=
+  app: desolate-retreat-19068
+  on:
+    repo: DikshaSach/node-restaurants-app-mongoose
+    branch: feature/with-tests
